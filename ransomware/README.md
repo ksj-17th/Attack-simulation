@@ -398,3 +398,20 @@ Flags: nowait runhidden
 ## 2. FileCryptography.psm1 병합
 
 기존의 `FileCryptography.psm1` 파일에 있던 암호화 기능을 `installer.ps1`에 병합한다.
+
+---
+
+## Demo Video
+
+### ramsomware-demo
+
+랜섬웨어 동작 데모 영상입니다.
+
+[![ramsomware-demo](https://img.youtube.com/vi/d8d4vvuh4-c/0.jpg)](https://youtu.be/d8d4vvuh4-c?si=gL1AwRA3fMD9DfP5)
+
+YouTube:
+
+```text
+https://youtu.be/d8d4vvuh4-c?si=gL1AwRA3fMD9DfP5
+```
+
